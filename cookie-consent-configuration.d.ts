@@ -1,4 +1,4 @@
-export interface CookieConsentConfig {
+export declare interface CookieConsentConfig {
   categories: {
     [key: string]: { enabled: boolean; readOnly?: boolean };
   };
