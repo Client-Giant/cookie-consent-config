@@ -3,8 +3,6 @@
  * https://cookieconsent.orestbida.com/reference/configuration-reference.html
  */
 
-const dataLayer = window.dataLayer || [];
-
 exports.cookieConsentConfig = {
   categories: {
     necessary: {
@@ -27,9 +25,13 @@ exports.cookieConsentConfig = {
     },
   },
   onConsent: ({ cookie }) => {
+    console.log("onConsent");
+    const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
   onChange: ({ cookie }) => {
+    console.log("onChange");
+    const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
   language: {
