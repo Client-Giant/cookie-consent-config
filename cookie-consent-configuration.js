@@ -24,12 +24,12 @@ exports.cookieConsentConfig = {
       position: "bottom left",
     },
   },
-  onConsent: function ({ cookie }) {
+  onConsent: ({ cookie }) => {
     console.log("onConsent");
     const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
-  onChange: function ({ cookie }) {
+  onChange: ({ cookie }) => {
     console.log("onChange");
     const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
