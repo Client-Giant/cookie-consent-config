@@ -1,6 +1,6 @@
 {
   "name": "clientgiant-cookie-consent-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared configuration for Vanilla Cookie Consent Module",
   "main": "cookie-consent-configuration.js",
   "types": "cookie-consent-configuration.d.ts",
