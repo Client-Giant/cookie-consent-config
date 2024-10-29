@@ -10,5 +10,8 @@
     "url": "github.com:Client-Giant/cookie-consent-config.git"
   },
   "author": "Matt Cairns (matt@clientgiant.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vanilla-cookieconsent": "^3.0.1"
+  }
 }
