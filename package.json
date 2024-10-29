@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Shared configuration for Vanilla Cookie Consent Module",
   "main": "cookie-consent-configuration.js",
+  "types": "cookie-consent-configuration.d.ts",
   "scripts": {},
   "repository": {
     "type": "git",
