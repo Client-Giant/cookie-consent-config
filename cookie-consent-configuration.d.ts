@@ -1,4 +1,4 @@
-export declare const CookieConsentConfig: CookieConsentConfig;
+export declare const cookieConsentConfig: CookieConsentConfig;
 
 export declare interface CookieConsentConfig {
   categories: {
