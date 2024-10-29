@@ -5,7 +5,7 @@
 
 const dataLayer = window.dataLayer || [];
 
-exports.cookieConsentConfig = {
+exports.CookieConsentConfig = {
   categories: {
     necessary: {
       enabled: true,

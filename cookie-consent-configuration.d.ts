@@ -1,3 +1,5 @@
+export declare const CookieConsentConfig: CookieConsentConfig;
+
 export declare interface CookieConsentConfig {
   categories: {
     [key: string]: { enabled: boolean; readOnly?: boolean };
