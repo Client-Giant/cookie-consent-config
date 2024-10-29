@@ -1,0 +1,13 @@
+{
+  "name": "clientgiant-cookie-consent-config",
+  "version": "1.0.0",
+  "description": "Shared configuration for Vanilla Cookie Consent Module",
+  "main": "cookie-consent-configuration.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "github.com:Client-Giant/cookie-consent-config.git"
+  },
+  "author": "Matt Cairns (matt@clientgiant.com)",
+  "license": "ISC"
+}
