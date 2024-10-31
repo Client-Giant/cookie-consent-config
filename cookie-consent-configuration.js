@@ -82,7 +82,7 @@ exports.cookieConsentConfig = {
     if (window.HubspotConversations) {
       onConversationsAPIReady();
     } else {
-      window.hsConversationOnReady = [onConversationsAPIReady];
+      window.hsConversationsOnReady = [onConversationsAPIReady];
     }
   },
   onModalHide: () => {
