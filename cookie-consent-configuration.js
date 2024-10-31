@@ -62,6 +62,29 @@ exports.cookieConsentConfig = {
     const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
+  onModalShow: () => {
+    function openWidget(event) {
+      console.log("open widget");
+      const element = event.target;
+      if (element.closest(`[data-hubspotChat]`) !== null) {
+        window.HubspotConversations.widget.open();
+      }
+    }
+    function onConversationsAPIReady() {
+      console.log("ready");
+      document.addEventListener("click", openWidget);
+    }
+
+    // Hook in to hubspot
+    if (window.HubspotConversations) {
+      onConversationsAPIReady();
+    } else {
+      window.hsConversationOnReady = [onConversationsAPIReady];
+    }
+  },
+  onModalHide: () => {
+    document.removeEventListener("click", openWidget);
+  },
   language: {
     default: "en",
     translations: {
