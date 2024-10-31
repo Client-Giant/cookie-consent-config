@@ -76,18 +76,6 @@ exports.cookieConsentConfig = {
     const dataLayer = window.dataLayer || [];
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
-  onModalShow: () => {
-    console.log("on modal show");
-    // Hook in to hubspot
-    if (window.HubspotConversations) {
-      onConversationsAPIReady();
-    } else {
-      window.hsConversationsOnReady = [onConversationsAPIReady];
-    }
-  },
-  onModalHide: () => {
-    document.removeEventListener("click", openWidget);
-  },
   language: {
     default: "en",
     translations: {
@@ -135,11 +123,6 @@ exports.cookieConsentConfig = {
               description:
                 "We use a set of cookies that are optional for the website to function. They are usually only set in response to information provided to the website to personalize and optimize your experience as well as remember your chat history.",
               linkedCategory: "functionality",
-            },
-            {
-              title: "More information",
-              description:
-                'For any queries in relation to our policy on cookies and your choices, please <button class="link" type="button" data-hubspotChat>contact us</a>',
             },
           ],
         },
