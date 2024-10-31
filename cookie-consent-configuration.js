@@ -8,15 +8,45 @@ exports.cookieConsentConfig = {
     necessary: {
       enabled: true,
       readOnly: true,
+      cookies: [
+        { name: /^__cf/ },
+        { name: /^__stripe/ },
+        { name: /^_cf/ },
+        { name: "cc_cookie" },
+      ],
     },
     analytics: {
       enabled: true,
+      cookies: [
+        { name: /^_ga/ },
+        { name: "_gid" },
+        { name: "hubspotutk" },
+        { name: "bcookie" },
+        { name: "AnalyticsSyncHistory" },
+      ],
     },
     advertisement: {
       enabled: true,
+      cookies: [
+        { name: "_fbp" },
+        { name: "li_sugr" },
+        { name: "_gcl_au" },
+        { name: "UserMatchHistory" },
+        { name: "SID" },
+        { name: "NID" },
+        { name: "DV" },
+      ],
     },
     functionality: {
       enabled: true,
+      cookies: [
+        { name: /^__hs/ },
+        { name: "XSRF-TOKEN" },
+        { name: /^cg_/ },
+        { name: "lidc" },
+        { name: "SSIDCC" },
+        { name: "HSID" },
+      ],
     },
   },
   guiOptions: {
