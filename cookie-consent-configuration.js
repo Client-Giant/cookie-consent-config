@@ -63,6 +63,7 @@ exports.cookieConsentConfig = {
     dataLayer.push({ event: "cookie_consent_updated", cookie });
   },
   onModalShow: () => {
+    console.log("on modal show");
     function openWidget(event) {
       console.log("open widget");
       const element = event.target;
