@@ -3,20 +3,6 @@
  * https://cookieconsent.orestbida.com/reference/configuration-reference.html
  */
 
-function openWidget(event) {
-  const element = event.target;
-  console.log({ element });
-  if (element.closest(`[data-hubspotChat]`) !== null) {
-    console.log("open widget");
-    window.HubspotConversations.widget.open();
-  }
-}
-
-function onConversationsAPIReady() {
-  console.log("ready");
-  document.addEventListener("click", openWidget);
-}
-
 exports.cookieConsentConfig = {
   categories: {
     necessary: {
