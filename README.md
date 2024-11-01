@@ -1,6 +1,6 @@
 # Cookie Consent Configuration
 
-Shared configuration to implement [https://github.com/orestbida/cookieconsent]()
+Shared configuration to implement [https://github.com/orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)
 
 ## Development
 
